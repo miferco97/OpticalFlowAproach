@@ -26,14 +26,7 @@ lk_params = dict( winSize  = (15,15),
 
 class HomographyFilter:
 
-    def __init__(self,bgSubstractor="MOG2"):
-
-        if bgSubstractor == "MOG2":
-            self.bgSubs = cv2.createBackgroundSubtractorMOG2()
-        elif bgSubstractor == "KNN":
-            self.bgSubs = cv2.createBackgroundSubtractorKNN()
-        else:
-            raise Exception("No correct Backgroung Substractor selected")
+    def __init__(self):
 
         self.old_gray = None
 
@@ -65,5 +58,9 @@ class HomographyFilter:
 
 
         return img
+
+
+
+
 
 
