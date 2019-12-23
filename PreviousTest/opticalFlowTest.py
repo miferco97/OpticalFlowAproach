@@ -19,7 +19,7 @@ color = np.random.randint(0,255,(100,3))
 
 
 # Take first frame and find corners in it
-PATH = "./DAVIS/JPEGImages/480p/kite-walk/"
+PATH = "../DAVIS/JPEGImages/480p/kite-walk/"
 
 elements = os.listdir(PATH)
 
