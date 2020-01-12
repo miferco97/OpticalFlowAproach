@@ -1,2 +1,9 @@
 *.mp4
 DAVIS/
+Histogramas/
+Images/
+Mascaras/
+MaskResults/
+PreviousTest/
+__pycahce__/
+Resultados/
