@@ -1,0 +1,250 @@
+elephant
+Media de la precision:  0.04026038527603849
+Media de la exhaustividad:  0.024831081953918175
+F:  0.03071704998610147
+
+goat
+Media de la precision:  0.05394577838384145
+Media de la exhaustividad:  0.05045652460219699
+F:  0.0521428439097356
+
+dance-jump
+Media de la precision:  0.06445271731281917
+Media de la exhaustividad:  0.04845766044292841
+F:  0.05532224676326813
+
+rhino
+Media de la precision:  0.08067190535585052
+Media de la exhaustividad:  0.043999166770359054
+F:  0.05694178379795097
+
+mallard-water
+Media de la precision:  0.04824663090890472
+Media de la exhaustividad:  0.10507467648405089
+F:  0.06612908825784633
+
+hike
+Media de la precision:  0.056533898810578145
+Media de la exhaustividad:  0.1098653817275673
+F:  0.07465318784173458
+
+mallard-fly
+Media de la precision:  0.050595884668351396
+Media de la exhaustividad:  0.22268812718378195
+F:  0.08245709453429807
+
+bmx-trees
+Media de la precision:  0.0545998007387282
+Media de la exhaustividad:  0.21553289313544824
+F:  0.0871279433012166
+
+bear
+Media de la precision:  0.11480961539944454
+Media de la exhaustividad:  0.07040748491866647
+F:  0.08728628459111956
+
+libby
+Media de la precision:  0.06927935148834723
+Media de la exhaustividad:  0.1299006657660704
+F:  0.09036482681576136
+
+drift-straight
+Media de la precision:  0.09265504300424472
+Media de la exhaustividad:  0.1028169946349343
+F:  0.09747187551246572
+
+lucia
+Media de la precision:  0.08950454021876073
+Media de la exhaustividad:  0.13418834962059983
+F:  0.10738353413138092
+
+blackswan
+Media de la precision:  0.15212591779060022
+Media de la exhaustividad:  0.08659119010724073
+F:  0.11036296798033952
+
+dog
+Media de la precision:  0.15111069164841498
+Media de la exhaustividad:  0.0937829527243958
+F:  0.11573682842858987
+
+motocross-jump
+Media de la precision:  0.1343904690763041
+Media de la exhaustividad:  0.1077884872190185
+F:  0.11962843989404771
+
+car-roundabout
+Media de la precision:  0.15302529338259804
+Media de la exhaustividad:  0.10279493783788385
+F:  0.12297874523716468
+
+flamingo
+Media de la precision:  0.10504492942821601
+Media de la exhaustividad:  0.15013769630730942
+F:  0.12360719047903931
+
+parkour
+Media de la precision:  0.08152996653665155
+Media de la exhaustividad:  0.2786417403032641
+F:  0.1261490079937718
+
+cows
+Media de la precision:  0.16270976357564854
+Media de la exhaustividad:  0.11384624437435893
+F:  0.13396125901178021
+
+train
+Media de la precision:  0.25346482856440994
+Media de la exhaustividad:  0.10441610743809626
+F:  0.14790288114690045
+
+camel
+Media de la precision:  0.177091471234318
+Media de la exhaustividad:  0.12814750880125336
+F:  0.14869549666285756
+
+horsejump-high
+Media de la precision:  0.11314999897752526
+Media de la exhaustividad:  0.24109016189733776
+F:  0.15401614263500588
+
+motorbike
+Media de la precision:  0.10804611223775851
+Media de la exhaustividad:  0.2807295604052425
+F:  0.15603722005442458
+
+paragliding-launch
+Media de la precision:  0.209358018535585
+Media de la exhaustividad:  0.12721910382413953
+F:  0.15826589347346462
+
+horsejump-low
+Media de la precision:  0.15680467275004387
+Media de la exhaustividad:  0.1908129484943948
+F:  0.17214525453584573
+
+scooter-gray
+Media de la precision:  0.1686280871784323
+Media de la exhaustividad:  0.17870387619796857
+F:  0.17351983688283998
+
+car-shadow
+Media de la precision:  0.1434536972819628
+Media de la exhaustividad:  0.23780278547671765
+F:  0.17895401307668857
+
+bmx-bumps
+Media de la precision:  0.10444260621577445
+Media de la exhaustividad:  0.6320598306239024
+F:  0.17926342858531877
+
+bus
+Media de la precision:  0.20261904653439836
+Media de la exhaustividad:  0.17293789738110585
+F:  0.18660558642157332
+
+swing
+Media de la precision:  0.2298412187626503
+Media de la exhaustividad:  0.1587092989327238
+F:  0.18776420071205235
+
+boat
+Media de la precision:  0.23634489865350317
+Media de la exhaustividad:  0.16401489455005283
+F:  0.19364623665088326
+
+stroller
+Media de la precision:  0.24843992538203571
+Media de la exhaustividad:  0.16020216699916273
+F:  0.19479449208665825
+
+scooter-black
+Media de la precision:  0.17147979865181437
+Media de la exhaustividad:  0.3354334471807262
+F:  0.22694242242246226
+
+dance-twirl
+Media de la precision:  0.30240715937970614
+Media de la exhaustividad:  0.1906680224428036
+F:  0.23387660615305395
+
+hockey
+Media de la precision:  0.21509192809556965
+Media de la exhaustividad:  0.2608977427941351
+F:  0.2357908247398748
+
+drift-turn
+Media de la precision:  0.3064580450466984
+Media de la exhaustividad:  0.1949528993732431
+F:  0.23830706163474674
+
+soapbox
+Media de la precision:  0.22859976532417353
+Media de la exhaustividad:  0.2603383679963925
+F:  0.24343893745687667
+
+car-turn
+Media de la precision:  0.2574013259029946
+Media de la exhaustividad:  0.30979677459851107
+F:  0.28117901125416844
+
+drift-chicane
+Media de la precision:  0.365297072598434
+Media de la exhaustividad:  0.22867155723033997
+F:  0.2812709165022702
+
+kite-surf
+Media de la precision:  0.21746044019017127
+Media de la exhaustividad:  0.4734094361438036
+F:  0.29802377524489454
+
+breakdance-flare
+Media de la precision:  0.3565439566459991
+Media de la exhaustividad:  0.2678767075074748
+F:  0.3059149918348733
+
+kite-walk
+Media de la precision:  0.5160587158905535
+Media de la exhaustividad:  0.27737072473027913
+F:  0.3608123739848574
+
+motocross-bumps
+Media de la precision:  0.36645738481995166
+Media de la exhaustividad:  0.3755414017824649
+F:  0.37094378716972587
+
+dog-agility
+Media de la precision:  0.3625370351551546
+Media de la exhaustividad:  0.38291666531497753
+F:  0.37244827537173836
+
+tennis
+Media de la precision:  0.3587216110260191
+Media de la exhaustividad:  0.38819766349589374
+F:  0.37287802309002555
+
+breakdance
+Media de la precision:  0.5246009378872152
+Media de la exhaustividad:  0.3515821248027893
+F:  0.4210086231287458
+
+paragliding
+Media de la precision:  0.3773693935290573
+Media de la exhaustividad:  0.5774801950596314
+F:  0.4564558723993283
+
+rollerblade
+Media de la precision:  0.37304500854104544
+Media de la exhaustividad:  0.6127918371639042
+F:  0.4637662654315292
+
+soccerball
+Media de la precision:  0.3538993497008809
+Media de la exhaustividad:  0.7703145662650361
+F:  0.4849856778940233
+
+surf
+Media de la precision:  0.5830836562719903
+Media de la exhaustividad:  0.438007660083206
+F:  0.5002395061552227
+

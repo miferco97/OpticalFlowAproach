@@ -17,8 +17,9 @@ class DenseOpFlow:
         self.aux = np.zeros_like(self.ones)
         self.hsv[...,1] = 255
         self.thr = 5  # 50
+        self.th_bin = 10
 
-    def __call__(self, frame):
+    def __call__(self, frame, imageName):
         self.next_img = cv.cvtColor(frame,cv.COLOR_BGR2GRAY)
         flow = cv.calcOpticalFlowFarneback(self.prvs_img,self.next_img, None, 0.5, 3, 20, 5, 7, 1.5, 0)
         mag, ang = cv.cartToPolar(flow[...,0], flow[...,1])
@@ -36,7 +37,8 @@ class DenseOpFlow:
 
         # Se muestra la imagen filtrada
         bgr = cv.cvtColor(self.hsv, cv.COLOR_HSV2BGR)
-        ##cv.imshow('Ang + Mag - Filtrados', bgr)
+        cv.imshow('Ang + Mag - Filtrados', bgr)
+        cv.imwrite("./Images/" + imageName, bgr)
 
         # Eliminar los pixels que tengan como angulo el valor mas repetido en la imagen (fondo)
         m = stats.mode(self.hsv[..., 0], axis=None)
@@ -44,9 +46,13 @@ class DenseOpFlow:
         thr = (np.max(self.hsv[..., 0]) - np.min(self.hsv[..., 0])) / 2
         thr = 50
 
-        hist = cv.calcHist([self.hsv], [0], None, [256], [0, 256])
-        plt.plot(hist, color='b')
-        plt.xlim([0, 256])
+
+        hist = cv.calcHist([self.hsv], [0], None, [255], [0, 255])
+        # plt.plot(hist, color='b')
+        # plt.xlim([0, 255])
+        # plt.show()
+        # zeros = hist[0]
+
         # k = cv.waitKey() & 0xff
 
         # Se calcula el angulo de desplazamiento del fondo
@@ -55,7 +61,7 @@ class DenseOpFlow:
         # hist[np.where(hist == ang_fondo)]
         peaks, _ = find_peaks(hist.T[0],height=10000, distance = 20)
 
-        print(peaks)
+        # print(peaks)
 
         # if(peaks.shape[0] >= 2):
             # dist = abs(peaks[1]-peaks[0])
@@ -73,6 +79,16 @@ class DenseOpFlow:
         self.aux[...] -= self.ones * thr
         self.aux[self.aux < 0] = 0
 
+        self.aux[self.aux > self.th_bin] = 255
+
+        # bckgF = cv.bitwise_and(self.hsv, self.hsv, mask=self.aux.astype('uint8'))
+        # hist = cv.calcHist([bckgF], [0], None, [255], [0, 255])
+        # hist[0] = n_ang_fondo
+        # plt.plot(hist, color='b')
+        # plt.xlim([0, 255])
+        # bckgF = cv.cvtColor(bckgF, cv.COLOR_HSV2BGR)
+        # cv.imshow('bckgF',bckgF)
+        # plt.show()
 
         # Se muestra la imagen eliminando angulos
         ##cv.imshow('aux', self.aux)
@@ -95,7 +111,6 @@ class DenseOpFlow:
         # th = cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 11, 2)
         res = cv.bitwise_and(self.next_img, self.next_img, mask=self.aux.astype('uint8'))
 
-        # plt.show()
         # cv.imshow('img', self.next_img)
         # cv.imshow('gray', gray)
         # cv.imshow('frame2', bgr)
